@@ -9,11 +9,11 @@ testing purposes.
    ```git clone <https://github.com/iftikhar1995/DynamicSchemaMappingDataSet-Flink.git>```
 
 2. Create a Maven project.
-3. In `pom.xml` file add the `<properties>`, `<dependencies>`, and `build` tags from the `pom.xml` file provided in
+3. In `pom.xml` file add the `<properties>`, `<dependencies>`, and `<build>` tags from the `pom.xml` file provided in
 the repository.
 4. Add content from folder **resources** and **java** into there respective folder.
-5. Change the path to the configuration in the **Main** class if necessary. To change the configuration file path,
-update the value of **configFilePath** variable accordingly. For example:
+5. Change the path to the configuration in the **Main** class, if necessary. To change the configuration file path,
+update the value of **configFilePath** variable. For example:
    ```java
       static String configFilePath = "path to config.json";
    ``` 
@@ -43,9 +43,9 @@ The structure of the configuration file is as follow:
 ```
 
 The config file contains  the `fields` key. This is a `JSONArray`. It contains the schema information. The array consist
-of objects, which will provide the information of the column like name and it's type.
+of objects, which will provide the information of the columns like name and it's type.
 
-The 'source' key represents the location where data file resides.
+The `source` key represents the location where data file resides.
 
 The `PojoName` represents the name of the POJO that is going to be created on fly.
 
@@ -59,5 +59,5 @@ Following are the supported types of fields:
 
 But you can add support for more to it.
 
-* NOTE
+# NOTE
 This is the first step. We can do a lot using this technique e.g. using TableAPI and SQL you can query any dataset. 
