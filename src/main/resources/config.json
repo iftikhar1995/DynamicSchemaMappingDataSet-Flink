@@ -1,0 +1,24 @@
+{
+  "fields":[
+        {
+          "name" : "RollNumber",
+          "type" : "String"
+        },
+        {
+          "name" : "Name",
+          "type" : "String"
+        },
+        {
+          "name" : "Semester",
+          "type" : "Integer"
+        },
+        {
+          "name" : "Cgpa",
+          "type" : "Float"
+        }
+
+  ],
+  "source" : "src/main/resources/Students.csv",
+  "sink" : "",
+  "PojoName" : "Student"
+}
